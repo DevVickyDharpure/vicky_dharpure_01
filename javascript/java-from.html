@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section-one {
+            height: 400px;
+            width: 330px;
+            background-color: tan;
+        }
+
+        .display-show {
+            height: 150px;
+            width: 300px;
+            background-color: rgb(0, 196, 203);
+        }
+
+        button {
+            height: 35px;
+            width: 160px;
+            font-size: 25px;
+            border: none;
+            background-color: rgb(15, 185, 15);
+            border-radius: 8px;
+        }
+        .information-text{
+            font-size: 20px;
+        }
+        .information-text-1{
+            font-size: 14px;
+        }
+        .input-box{
+            height: 30px;
+            width: 200px;
+        }
+        .small-box{
+            height: 18px;
+            width: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+
+        <!--  Section-one------start --- -->
+        <div class="section-one">
+
+            <label class="information-text" for="">Full Name :</label>
+            <input class="input-box" type="text" id="fullName">
+            <br>
+            <br>
+             <label  class="information-text" for="">Aadhar No :</label>
+            <input class="input-box" type="text" id="" >
+            <br>
+            <br>
+
+            <label  class="information-text" for="">Date of Birth :</label>
+            <input class="input-box" type="date" id="DateofBirth">
+            <br>
+            <br>
+            <label  class="information-text" for="">Email id. : </label>
+            <input class="input-box" type="text" id="Emailid">
+            <br>
+            <br>
+            <label  class="information-text" for=""> Phone no : </label>
+            <input class="input-box" type="text" id="Phone">
+            <br>
+           <!--  -->
+            <hr>
+            <!--  -->
+            <label class="information-text-1" for=""> 12 <sup>th</sup> persent </label>
+            <input class="small-box" type="text">
+            <!--  -->
+            <label  class="information-text-1"  for="">  total mark </label>
+            <input class="small-box" type="text">
+            <br>
+            <label for="">Faculty</label>
+
+
+        <br>
+        <br>
+        <label for=""></label>
+
+
+
+
+        </div>
+        <!-- Section-one------end --- -->
+        <br>
+        <!-- display show ----------- -->
+        <div class="display-show" id="display"></div>
+        <br>
+        <!-- ------ans---button -->
+        <button onclick="Vicky()"> sand</button>
+    </div>
+</body>
+<script>
+    function Vicky() {
+
+        let name = document.getElementById("fullName").value;
+        let dateofbirth = document.getElementById("DateofBirth").value;
+        let  emailid = document.getElementById("Emailid").value;
+
+        document.getElementById("display").innerHTML = " Full name :" + name +  "<br/>" + 
+         "Date of Birth :" + dateofbirth  + "<br>" +  " Email id :" + emailid
+
+    }
+</script>
+
+</html>

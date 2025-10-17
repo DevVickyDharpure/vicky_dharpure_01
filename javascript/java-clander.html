@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascripty</title>
+    <style>
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+
+        }
+
+        .section-one {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(194, 213, 213);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid black;
+            border-radius: 9px
+        }
+
+        .display-area {
+            height: 70%;
+            width: 50%;
+            background-color: rgb(111, 240, 233);
+            border-radius: 8px;
+        }
+
+        .sereen-box {
+            height: 300px;
+            width: 95%;
+            background-color: rgb(255, 250, 240);
+            border-radius: 29px;
+            margin-left: 20px;
+        }
+
+        .mini-box-1 {
+            height: 50px;
+            width: 450px;
+            background-color: rgb(202, 203, 205);
+            margin-left: 25px;
+            border-radius: 12px;
+            margin-left: 15px;
+        }
+
+        .mini-box-2 {
+            height: 50px;
+            width: 90px;
+            background-color: rgb(156, 155, 163);
+        }
+
+        h1 {
+            margin-left: 120px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <!--  -->
+        <div class="section-one">
+            <div class="display-area">
+                <!--  -->
+                <div class="sereen-box" id="display">
+                    <h1> Wellcome to Universal Clander </h1>
+                </div>
+
+
+
+                <button id="sun" onclick="Sunday()"> Sunday</button>
+                <button id="mon" onclick="Monday()"> Monday</button>
+                <button id="tue" onclick="Tuesday()"> Tuesday</button>
+                <button id="wed" onclick="Wednesday()"> Wednesday</button>
+                <button id="thu" onclick="Thursday()"> Thursday</button>
+                <button id="fri" onclick="Friday()"> Friday</button>
+                <button id="sat" onclick="Saturday()"> Saturday</button>
+                <!-- <button class="mini-box-2" onclick="add()"> Sand</button> -->
+
+
+                <!--  -->
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<!--  -->
+<script>
+    function Sunday() {
+        let a = (document.getElementById("sun").innerHTML);
+        document.getElementById("display").innerHTML = "today is " + a;
+    }
+     function Monday() {
+        let b = (document.getElementById("mon").innerHTML);
+        document.getElementById("display").innerHTML = "today is " + b;
+    }
+     function Tuesday() {
+        let c = (document.getElementById("tue").innerHTML);
+        document.getElementById("display").innerHTML = "today is " + c;
+    }
+     function Wednesday () {
+        let d = (document.getElementById("wed").innerHTML);
+        document.getElementById("display").innerHTML = "today is " + d;
+    }
+    function Thursday() {
+        let e = (document.getElementById("thu").innerHTML);
+        document.getElementById("display").innerHTML = "today is " + e;
+    }
+     function Friday() {
+        let f = (document.getElementById("fri").innerHTML);
+        document.getElementById("display").innerHTML = "today is " + f;
+    }
+     function Saturday () {
+        let g = (document.getElementById("sat").innerHTML);
+        document.getElementById("display").innerHTML = "today is " + g;
+    }
+
+</script>
+
+</html>
